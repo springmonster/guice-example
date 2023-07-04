@@ -2,11 +2,18 @@ package com.khch.requests;
 
 import com.khch.services.DrawShape;
 import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 public class SquareRequest {
 
     @Inject
-    DrawShape drawShape;
+    @Named("Square")
+    DrawShape drawSquare;
+
+
+    @Inject
+    @Named("Circle")
+    DrawShape drawCircle;
 
 //    @Inject
 //    public SquareRequest(DrawShape drawShape) {
@@ -14,10 +21,11 @@ public class SquareRequest {
 //    }
 
     public void makeRequest() {
-        drawShape.draw();
+        drawSquare.draw();
+        drawCircle.draw();
     }
 
     public DrawShape getDrawShape() {
-        return drawShape;
+        return drawSquare;
     }
 }

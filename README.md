@@ -23,4 +23,7 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 # Example
 
 ![img.png](Object Graph.png)
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 
