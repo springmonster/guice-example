@@ -5,25 +5,30 @@
 # Description
 
 - If TypeA is an interface, then, we must have bindings to concrete classes.
--
 
-```shell
+```java
 bind(TypeA.class).to(ConcreteTypeA.class);
 ```
 
-`- If TypeA is a concrete class, then, we can bind it to itself.
+`- If TypeA is a concrete class, then, we can bind it to itself.`
 
-1. No Bindings`
+1. No Bindings
 2. Bindings to itself
 
-```shell
+```java
 bind(TypeA.class).to(SubClassOfTypeA.class);
 ```
 
-# Example
+# Images
 
 ![img.png](Object Graph.png)
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
+
+# @BindingAnnotation vs @Named
+
+- @BindingAnnotation is a custom annotation that you create.
+- @Named is a built-in annotation that comes with Guice.
+- They can be used interchangeably.
 

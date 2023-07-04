@@ -30,11 +30,19 @@ public class SquareRequest {
     @StarValue
     DrawShape drawStar;
 
+    @Inject
+    DrawShape drawLines;
+
+//    @Inject
+//    DrawShape drawDots;
+
     public void makeRequest() {
         drawSquare.draw();
         drawCircle.draw();
         drawTriangle.draw();
         drawStar.draw();
+        drawLines.draw();
+//        drawDots.draw();
     }
 
     public DrawShape getDrawShape() {

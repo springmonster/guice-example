@@ -1,6 +1,7 @@
 package com.khch.module;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.Provides;
 import com.google.inject.Scopes;
 import com.google.inject.name.Names;
 import com.khch.annotations.ColorValue;
@@ -9,6 +10,8 @@ import com.khch.annotations.StarValue;
 import com.khch.annotations.TriangleValue;
 import com.khch.requests.SquareRequest;
 import com.khch.services.*;
+import jakarta.inject.Named;
+import jdk.jfr.Name;
 
 public class AppModule extends AbstractModule {
 
@@ -39,5 +42,28 @@ public class AppModule extends AbstractModule {
         bind(String.class).annotatedWith(ColorValue.class).toInstance("red");
         bind(Integer.class).annotatedWith(EdgeValue.class).toInstance(10);
         bind(SquareRequest.class).in(Scopes.SINGLETON);
+
+//        bind(DrawShape.class)
+//                .annotatedWith(Names.named("Lines"))
+//                .to(DrawLines.class)
+//                .in(Scopes.SINGLETON);
+//
+//        bind(DrawShape.class)
+//                .annotatedWith(Names.named("Dots"))
+//                .to(DrawDots.class)
+//                .in(Scopes.SINGLETON);
+
     }
+
+    @Provides
+//    @Named("Lines")
+    public DrawShape provideDrawLines() {
+        return new DrawLines("red", 10);
+    }
+
+//    @Provides
+////    @Named("Dots")
+//    public DrawShape provideDrawDots() {
+//        return new DrawDots("black", 20);
+//    }
 }
