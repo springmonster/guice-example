@@ -1,8 +1,5 @@
 package com.khch.requests;
 
-import com.google.inject.Inject;
-import com.khch.services.DrawShape;
-
 //public class SquareSubRequest extends SquareRequest {
 ////    @Inject
 //    public SquareSubRequest(DrawShape drawShape) {

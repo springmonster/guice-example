@@ -10,8 +10,6 @@ import com.khch.annotations.StarValue;
 import com.khch.annotations.TriangleValue;
 import com.khch.requests.SquareRequest;
 import com.khch.services.*;
-import jakarta.inject.Named;
-import jdk.jfr.Name;
 
 public class AppModule extends AbstractModule {
 
