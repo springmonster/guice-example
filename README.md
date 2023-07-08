@@ -32,3 +32,16 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 - @Named is a built-in annotation that comes with Guice.
 - They can be used interchangeably.
 
+# @BindingAnnotation vs @Qualifier
+
+- @BindingAnnotation is a custom annotation that you create.
+- @Qualifier is a built-in annotation that comes with Guice.
+- They can be used interchangeably.
+- Older code may still use Guice `BindingAnnotation` in place of the standard `Qualifier` annotation.
+- `@Qualifier` annotation. New code should use `@Qualifier` instead.
+
+# toInstance
+
+- `bind(String.class).toInstance("jdbc:mysql://localhost/pizza");`
+- bindConstant() is a shortcut for toInstance() for primitive types and strings.
+
