@@ -50,7 +50,6 @@ public class AppModule extends AbstractModule {
 //                .annotatedWith(Names.named("Dots"))
 //                .to(DrawDots.class)
 //                .in(Scopes.SINGLETON);
-
     }
 
     @Provides

@@ -2,6 +2,10 @@ package com.khch.main;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.khch.factory.AliPay;
+import com.khch.factory.Payment;
+import com.khch.factory.PaymentFactory;
+import com.khch.factory.WeChatPay;
 import com.khch.module.AppModule;
 import com.khch.requests.SquareRequest;
 
@@ -36,6 +40,11 @@ public class GuiceDemo {
 
             System.out.println(squareRequest == squareRequest1);
             System.out.println(squareRequest.getDrawShape() == squareRequest1.getDrawShape());
+
+            Payment payment = injector.getInstance(PaymentFactory.class).createPayment(AliPay.class);
+            Payment payment1 = injector.getInstance(PaymentFactory.class).createPayment(WeChatPay.class);
+            System.out.println(payment.pay());
+            System.out.println(payment1.pay());
         }
     }
 }

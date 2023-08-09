@@ -45,3 +45,8 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 - `bind(String.class).toInstance("jdbc:mysql://localhost/pizza");`
 - bindConstant() is a shortcut for toInstance() for primitive types and strings.
 
+# Factory
+
+- [medium](https://jamesonwilliams.medium.com/guicin-up-abstract-factories-like-a-di-boss-f11997d75ce2)
+- [stackoverflow](https://stackoverflow.com/questions/27871631/gof-standard-factory-pattern-using-guice)
+- [https://stackoverflow.com/questions/17669413/can-guice-automatically-create-instances-of-different-classes-based-on-a-paramet](https://stackoverflow.com/questions/17669413/can-guice-automatically-create-instances-of-different-classes-based-on-a-paramet)
