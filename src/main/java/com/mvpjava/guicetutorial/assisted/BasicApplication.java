@@ -36,7 +36,6 @@ public class BasicApplication {
     }
 
     public static void main(String[] args) {
-
         Injector guice = Guice.createInjector(new ClearanceModule());
         BasicApplication application = guice.getInstance(BasicApplication.class);
         application.start();

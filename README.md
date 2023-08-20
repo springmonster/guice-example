@@ -71,5 +71,6 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 # AssistedInject
 
 - [https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2](https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2)
-- [github](https://github.com/mvpjava/google-guice-tutorials)
+- [Github](https://github.com/mvpjava/google-guice-tutorials)
 - [https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651](https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651)
+- [Dagger](https://dagger.dev/dev-guide/assisted-injection.html)

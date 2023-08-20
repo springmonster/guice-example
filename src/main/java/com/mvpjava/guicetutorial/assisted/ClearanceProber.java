@@ -27,7 +27,7 @@ public class ClearanceProber implements Clearable {
 
     @Override
     public Clearance probeClearance() throws ClearanceException {
-        ProbeResult probeResult = null;
+        ProbeResult probeResult;
         try {
             probeResult = probe();
         } catch (ProbeException ex) {
