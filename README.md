@@ -1,3 +1,15 @@
+<!-- TOC -->
+
+* [Github](#github)
+* [Description](#description)
+* [Images](#images)
+* [@BindingAnnotation vs @Named](#bindingannotation-vs-named)
+* [@BindingAnnotation vs @Qualifier](#bindingannotation-vs-qualifier)
+* [toInstance](#toinstance)
+* [Factory](#factory)
+
+<!-- TOC -->
+
 # Github
 
 - [Guice](https://github.com/eugenp/tutorials/tree/master/di-modules/guice)
@@ -50,3 +62,8 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 - [medium](https://jamesonwilliams.medium.com/guicin-up-abstract-factories-like-a-di-boss-f11997d75ce2)
 - [stackoverflow](https://stackoverflow.com/questions/27871631/gof-standard-factory-pattern-using-guice)
 - [https://stackoverflow.com/questions/17669413/can-guice-automatically-create-instances-of-different-classes-based-on-a-paramet](https://stackoverflow.com/questions/17669413/can-guice-automatically-create-instances-of-different-classes-based-on-a-paramet)
+
+# Multibinding & MapBinder & SetBinder & Multibinder
+
+- [https://medium.com/@AlexanderObregon/guice-multibindings-leveraging-the-power-of-set-and-map-bindings-6bea4ee247fa](https://medium.com/@AlexanderObregon/guice-multibindings-leveraging-the-power-of-set-and-map-bindings-6bea4ee247fa)
+- [https://github.com/google/guice/wiki/Multibindings](https://github.com/google/guice/wiki/Multibindings)
