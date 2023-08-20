@@ -65,6 +65,5 @@ public class BasicApplication {
 
         Random random = new Random();
         return speedClearances.get(random.nextInt(speedClearances.size()));
-
     }
 }

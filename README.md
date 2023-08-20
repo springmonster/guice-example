@@ -68,7 +68,8 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 - [https://medium.com/@AlexanderObregon/guice-multibindings-leveraging-the-power-of-set-and-map-bindings-6bea4ee247fa](https://medium.com/@AlexanderObregon/guice-multibindings-leveraging-the-power-of-set-and-map-bindings-6bea4ee247fa)
 - [https://github.com/google/guice/wiki/Multibindings](https://github.com/google/guice/wiki/Multibindings)
 
-# Youtube
+# AssistedInject
 
 - [https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2](https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2)
 - [github](https://github.com/mvpjava/google-guice-tutorials)
+- [https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651](https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651)
