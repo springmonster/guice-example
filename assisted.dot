@@ -1,0 +1,8 @@
+digraph injector {
+graph [rankdir=TB];
+x0 [margin="0.02,0", shape=box, style=dashed, label=<<table cellspacing="0" cellpadding="5" cellborder="0" border="0"><tr><td align="left" port="header" bgcolor="#ffffff"><font color="#000000">ClearanceProber$ClearaceProberFactory<br align="left"/></font></td></tr></table>>]
+x1 [margin="0.02,0", shape=box, style=solid, label=<<table cellspacing="0" cellpadding="5" cellborder="0" border="0"><tr><td align="left" port="header" bgcolor="#aaaaaa"><font color="#ffffff" point-size="10">ClearanceModule.java:9<br align="left"/></font><font color="#ffffff">com.mvpjava.guicetutorial.assisted.ClearanceProber$ClearaceProberFactory<br align="left"/></font></td></tr><tr><td align="left" port="m_932b421d">&lt;init&gt;</td></tr></table>>]
+x2 [margin="0.02,0", shape=box, style=solid, label=<<table cellspacing="0" cellpadding="5" cellborder="0" border="0"><tr><td align="left" port="header" bgcolor="#000000"><font color="#ffffff">Prober<br align="left"/></font></td></tr><tr><td align="left" port="m_a2367cc3">&lt;init&gt;</td></tr></table>>]
+x0 -> x1 [style=dashed, arrowhead=onormalonormal, arrowtail=none]
+x1:m_932b421d:e -> x2 [style=solid, arrowhead=normal, arrowtail=none]
+}

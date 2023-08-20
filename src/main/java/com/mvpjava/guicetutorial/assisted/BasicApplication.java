@@ -3,8 +3,12 @@ package com.mvpjava.guicetutorial.assisted;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
+import com.google.inject.grapher.graphviz.GraphvizGrapher;
+import com.google.inject.grapher.graphviz.GraphvizModule;
 import com.mvpjava.guicetutorial.assisted.exceptions.ClearanceException;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -35,12 +39,24 @@ public class BasicApplication {
                 randomFlightPlan.getAcid());
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Injector guice = Guice.createInjector(new ClearanceModule());
         BasicApplication application = guice.getInstance(BasicApplication.class);
+
+        graph("assisted.dot", guice);
+
         application.start();
     }
 
+    private static void graph(String filename, Injector demoInjector) throws IOException {
+        PrintWriter out = new PrintWriter(filename, "UTF-8");
+
+        Injector injector = Guice.createInjector(new GraphvizModule());
+        GraphvizGrapher grapher = injector.getInstance(GraphvizGrapher.class);
+        grapher.setOut(out);
+        grapher.setRankdir("TB");
+        grapher.graph(demoInjector);
+    }
 
     ////////////////////// PRIVATE ///////////////////////////
     private FlightPlan getRandomFlightPlan() {
