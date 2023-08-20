@@ -1,4 +1,3 @@
-
 package com.khch.multibindings.payment;
 
 import com.khch.factory.Payment;

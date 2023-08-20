@@ -1,4 +1,4 @@
-package com.examples.one;
+package com.mvpjava.guicetutorial.provider.diIntoProvider;
 
 import com.google.inject.Inject;
 
@@ -12,10 +12,12 @@ public class CheckoutService {
     }
 
     public double checkout(double shoppingCartTotal) {
-        double totalAfterDiscount = shoppingCartTotal - (shoppingCartTotal * discountable.getDiscount());
+        double discount = discountable.getDiscount();
+
+        double totalAfterDiscount = shoppingCartTotal - (shoppingCartTotal * discount);
         System.out.printf("%nShopping cart initially [$%.2f] with a discount of %.2f%% = [$%.2f]%n%n",
                 shoppingCartTotal,
-                discountable.getDiscount() * 100,
+                discount * 100,
                 totalAfterDiscount);
 
         return totalAfterDiscount;

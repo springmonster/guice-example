@@ -71,3 +71,4 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 # Youtube
 
 - [https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2](https://www.youtube.com/watch?v=3uAR5sFgh2A&list=PLKiN3faYVq89TjVuba-F62_nKBpcFdOWz&index=2)
+- [github](https://github.com/mvpjava/google-guice-tutorials)

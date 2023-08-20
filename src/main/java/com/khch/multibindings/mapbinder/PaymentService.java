@@ -2,7 +2,6 @@ package com.khch.multibindings.mapbinder;
 
 import com.google.inject.Inject;
 import com.khch.factory.Payment;
-import com.khch.multibindings.mapbinder.PaymentMethod;
 import com.khch.multibindings.payment.PaymentProcessor;
 
 import java.util.Map;

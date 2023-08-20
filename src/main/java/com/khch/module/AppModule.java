@@ -9,7 +9,12 @@ import com.khch.annotations.EdgeValue;
 import com.khch.annotations.StarValue;
 import com.khch.annotations.TriangleValue;
 import com.khch.requests.SquareRequest;
-import com.khch.services.*;
+import com.khch.services.DrawCircle;
+import com.khch.services.DrawLines;
+import com.khch.services.DrawShape;
+import com.khch.services.DrawSquare;
+import com.khch.services.DrawStar;
+import com.khch.services.DrawTriangle;
 
 public class AppModule extends AbstractModule {
 

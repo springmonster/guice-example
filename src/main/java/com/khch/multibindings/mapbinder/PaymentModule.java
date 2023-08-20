@@ -2,7 +2,6 @@ package com.khch.multibindings.mapbinder;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.MapBinder;
-import com.khch.multibindings.mapbinder.PaymentMethod;
 import com.khch.multibindings.payment.CreditCardProcessor;
 import com.khch.multibindings.payment.PayPalProcessor;
 import com.khch.multibindings.payment.PaymentProcessor;

@@ -1,4 +1,4 @@
-package com.examples.one;
+package com.mvpjava.guicetutorial.singleImpl;
 
 import com.google.inject.ImplementedBy;
 
