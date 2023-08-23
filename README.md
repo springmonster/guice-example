@@ -74,3 +74,10 @@ bind(TypeA.class).to(SubClassOfTypeA.class);
 - [Github](https://github.com/mvpjava/google-guice-tutorials)
 - [https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651](https://toshiyakomoda.medium.com/guice-assistedinject-f49b29105651)
 - [Dagger](https://dagger.dev/dev-guide/assisted-injection.html)
+
+# Eager
+
+> - What's Eager in Guice?
+> - Eager Singletons are instantiated when the Injector is created.
+
+- [https://github.com/google/guice/wiki/Scopes#eager-singletons](https://github.com/google/guice/wiki/Scopes#eager-singletons)
